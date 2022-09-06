@@ -1,8 +1,11 @@
+import CartWidget from "./CartWidget";
+
 const NavBar = () => {
   return (
 <header>
     <div>
       <h1>MUNDIALITO</h1>
+      <CartWidget/>
     </div>
     <div>
       <ul>
