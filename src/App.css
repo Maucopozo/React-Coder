@@ -28,3 +28,32 @@ li{
   margin-left: 5px;
 }
 
+.ImagenProducto {
+  background-color: red;
+  width: 65px;
+  height: 100px;
+
+}
+
+.carta {
+  text-align: center;
+  background-color: rgb(89, 230, 255);
+  border: black solid 2px;
+  color: black;
+display: inline-block;
+margin: 5px;
+}
+
+.productos{
+  text-align: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+h2{
+font-size: 18px;
+font-family: 'Courier New', Courier, monospace;
+text-transform: uppercase;
+color: black;
+font-weight: bolder;
+}
