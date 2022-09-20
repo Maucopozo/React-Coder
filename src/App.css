@@ -57,3 +57,10 @@ text-transform: uppercase;
 color: black;
 font-weight: bolder;
 }
+
+.itemDetail {
+  text-align: center;
+  justify-content: center;
+  background-color: red;
+  border: black 2px solid;
+}

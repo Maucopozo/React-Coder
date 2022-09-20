@@ -55,7 +55,7 @@ const ItemList = () => {
                 />
                 ))
 
-              //  : <p>Y pa cuando Cargando Productos...</p>
+              //  : <p>Loading...</p>
         }
 
 

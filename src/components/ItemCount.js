@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Add, Remove } from "@mui/icons-material";
-import customFetch from "./CustomFetch";
 
 
 const ItemCount = ({stock , initial , onAdd}) => {
