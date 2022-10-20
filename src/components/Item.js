@@ -1,5 +1,8 @@
 //BORRAR DESPUES ESTO
 
+import { Article } from "@mui/icons-material";
+import { Link } from "react-router-dom";
+
 //HASTA ACA
 
 
@@ -11,7 +14,8 @@ return (
         <img className="ImagenProducto" src={pictureUrl} alt="Imagen Figurita"/> 
         <h2>{description}</h2>
         <h3>{price}</h3>
-        </div>
+        <Link to={`/item/${id}`} className="aLink"><Article></Article>Ver más</Link>
+    </div>
 
     </>
 

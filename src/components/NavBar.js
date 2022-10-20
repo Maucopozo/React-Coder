@@ -1,20 +1,20 @@
+import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
 <header>
-    <div>
-      <h1>MUNDIALITO</h1>
-      <CartWidget/>
+    <div className="logoIni">
+    <Link to="/"><h1>JOGA-BONITO</h1></Link>
     </div>
     <div>
       <ul>
-        <li> <a href="index.html">TODO</a></li>
-        <li> <a href="index.html">PAISES</a></li>
-        <li> <a href="index.html">JUGADORES</a></li>
-        <li> <a href="index.html">ESTADIOS</a></li>
+        <li><Link to="/category/1">ARGENTINA</Link></li>
+        <li><Link to="/category/2">CLUBES</Link></li>
+        <li><Link to="/category/3">INTERNACIONAL</Link></li>
       </ul>
     </div>
+    <CartWidget/>
 </header>
 
   );

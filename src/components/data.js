@@ -1,15 +1,11 @@
-import { useEffect, useState } from "react";
-import Item from "./Item";
-import customFetch from "./CustomFetch";
-import { useParams } from "react-router-dom";
-import { ImportExport } from "@mui/icons-material";
 
-const unidades = [
+
+const dataFromBD = [
     {
         id:1,
         title:"Camiseta Alemania Titular",
         description:"Descubre la magia de la casaca de la selección Germana, Camiseta de Alemania Titular Original.",
-        stock:5,
+        stock: 5,
         price:15000,
         pictureUrl:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e86b99181d5c4bb89d53ae96009ae5a1_9366/Camisa_1_Alemanha_22_Branco_HF1467_01_laydown.jpg",
         categoryId:3,
@@ -102,7 +98,7 @@ const unidades = [
             description:"Simplemente Boca Juniors, club más grande del mundo. Camiseta Suplente 2022",
             stock: 3,
             price:50000,
-            pictureUrl:"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/d94fbf4a70884a228009af01016426f0_9366/Camiseta_Alternativa_Boca_Juniors_22-23_Blanco_IB9458_01_laydown.jpg",
+            pictureUrl:"https://newsport.vteximg.com.br/arquivos/ids/14313352-1000-1000/IB9458-A.jpg?v=637986037316100000",
             categoryId:2,
             category: {
                 name: "Clubes",
@@ -116,10 +112,10 @@ const unidades = [
             stock: 30,
             price:20000,
             pictureUrl:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d88ae2138faf49be8f74aeca012c62eb_9366/Camiseta_Titular_Argentina_22_Messi_Blanco_HL8425_01_laydown.jpg",
-            categoryId:1,
+            categoryId:3,
             category: {
                 name: "Argentina",
-                id: 3,
+                id: 1,
             },
         },
         {
@@ -129,57 +125,12 @@ const unidades = [
             stock: 30,
             price:20000,
             pictureUrl:"https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/a37248da803e40d08f48af04010aae24_9366/Camiseta_Suplente_Seleccion_Argentina_Messi_1_Azul_IQ5463_01_laydown.jpg",
-            categoryId:1,
+            categoryId:3,
             category: {
                 name: "Argentina",
-                id: 3,
+                id: 1,
             },
         },
             ]
-  
 
-const ItemList = () => {
-    const [data, setData] = useState([])
-    const {idCategory} = useParams();
-
-    useEffect(() => {
-        if (idCategory) {
-        customFetch(2000, unidades.filter(item => item.categoryId == idCategory))
-        .then (datos => setData(datos))
-        .catch(err => console.log(err)) 
-        }
-        else {
-            customFetch(2000, unidades)
-            .then (datos => setData(unidades))
-            .catch(err => console.log(err))
-        }
-        },[idCategory]);
-
-    return (
-        <>
-        {
-
-            data.map(item => (
-                <Item
-                
-                id={item.id}
-                title={item.title}
-                pictureUrl={item.pictureUrl}
-                price={item.price}
-
-                
-                
-                />
-                ))
-        }
-
-
-        </>
-
-    );
-
-            }
-
-
-export default ItemList;
-
+  export default dataFromBD;

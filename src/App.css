@@ -4,6 +4,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
 }
 
 ul{
@@ -17,6 +18,9 @@ a{
   text-transform: capitalize;
   font-weight: bolder;
 }
+a:hover{
+  color: black;
+}
   
 ul{
   list-style: none;
@@ -29,19 +33,22 @@ li{
 }
 
 .ImagenProducto {
-  background-color: red;
-  width: 65px;
-  height: 100px;
+    width: 60%;
+}
 
+.ImagenProducto:hover{
+  filter: grayscale();
 }
 
 .carta {
   text-align: center;
-  background-color: rgb(89, 230, 255);
-  border: black solid 2px;
-  color: black;
-display: inline-block;
-margin: 5px;
+  background-color: rgb(237 237 237);
+  border-bottom: solid 5px rgb(78, 78, 231);
+  color:rgb(78, 78, 231);
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  width: 30%;
 }
 
 .productos{
@@ -51,11 +58,11 @@ margin: 5px;
 }
 
 h2{
-font-size: 18px;
-font-family: 'Courier New', Courier, monospace;
-text-transform: uppercase;
-color: black;
-font-weight: bolder;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bolder;
+  margin: 10px;
 }
 
 .itemDetail {
@@ -65,4 +72,22 @@ font-weight: bolder;
   border-bottom: black 5px solid;
   margin-right: 5%;
   margin-left: 5%;
+}
+
+.error404P{
+  text-align: center;
+  color: red;
+  margin: 20px;
+}
+
+.aLink {
+  color: rgb(73, 73, 73);
+  font-style: italic;
+  font-size: 12px;
+  border: 2px rgba(255, 255, 255, 0.363) solid;
+}
+
+.logoIni {
+border-right: white 1px solid;
+padding: 10px;
 }
